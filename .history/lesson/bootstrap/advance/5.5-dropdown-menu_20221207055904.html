@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <title>Dropdown Menu Bootstrap</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="text-center">Dropdown Menu Bootstrap</h1>
+          <div class="dropdown float-right">
+            <button
+              id="my-dropdown"
+              class="btn btn-primary dropdown-toggle"
+              data-display="static"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Text
+            </button>
+            <div
+              class="dropdown-menu dropdown-menu-md-right"
+              aria-labelledby="my-dropdown"
+            >
+              <a class="dropdown-item" href="#">Text</a>
+              <a href="" class="dropdown-item">Menu item 1</a>
+              <a href="" class="dropdown-item">Menu item 2</a>
+              <a href="" class="dropdown-item">Menu item 3</a>
+              <div class="dropdown-divider"></div>
+              <div class="dropdown-header">MORE MENU</div>
+              <a href="" class="dropdown-item">Menu item 4</a>
+              <a href="" class="dropdown-item">Menu item 5</a>
+              <p class="p-4 text-muted">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit
+                impedit itaque dignissimos. Suscipit possimus cumque nihil
+                labore, natus libero est.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      $(document).ready(function () {
+        $("#my-dropdown").on("show.bs.dropdown", function () {
+          alert("SHOW");
+        });
+      });
+    </script>
+    <script src="js/popper.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

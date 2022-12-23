@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <title>Xây dựng nội dung hiển thị kiểu Poup Modal</title>
+  </head>
+  <body>
+    <style>
+      .modal {
+        background: gray;
+        opacity: 0.8;
+      }
+    </style>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Modal Bootstrap</h1>
+          <!-- Kích hoạt modal  -->
+          <button
+            class="btn btn-primary"
+            data-toggle="modal"
+            data-target="#demo-modal"
+          >
+            Show modal
+          </button>
+          <!-- data-target để kết nối với modal bên dưới  -->
+          <!-- Cấu trúc Modal  -->
+          <div class="modal fade" id="demo-modal">
+            <!-- .fade để cho hiệu ứng mềm mại hơn  -->
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Demo Modal Unitop</h5>
+                  <button class="close" data-dismiss="modal">
+                    <span>&times;</span>
+                  </button>
+                </div>
+                <!-- END MODAL-HEADER -->
+                <div class="modal-body overflow-auto">
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Nisi neque expedita numquam vitae, nihil minus rem dolores
+                    ex provident dignissimos.
+                  </p>
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Itaque quasi iure distinctio eos earum, maiores aspernatur
+                    voluptatum eligendi debitis culpa velit iste voluptatibus
+                    sit rerum hic odio quaerat deleniti reprehenderit impedit
+                    voluptas nesciunt voluptate perferendis eaque laboriosam!
+                    Nam totam ab nemo sequi vel ipsam. Ipsum provident fuga
+                    culpa explicabo saepe deleniti magnam debitis impedit. Illo
+                    sunt numquam, pariatur vero quidem doloremque ut magnam
+                    deleniti repellat iste aspernatur voluptas non possimus
+                    consectetur blanditiis corporis molestias, assumenda soluta,
+                    unde esse laborum optio? Dignissimos facilis eos repellat
+                    voluptate soluta, nisi iusto suscipit minima itaque. Magnam
+                    consequatur quo eaque laboriosam. Perferendis, mollitia. Sed
+                    debitis corrupti, fuga soluta veritatis delectus nemo porro
+                    pariatur dolore mollitia, numquam autem, quibusdam labore
+                    aut suscipit vitae rerum? Inventore impedit sequi labore
+                    delectus deserunt magni natus adipisci nemo maxime ducimus?
+                    Expedita quae, cupiditate delectus deleniti incidunt
+                    necessitatibus officiis. Ipsa provident ex ullam nihil nemo
+                    illum laudantium reiciendis similique eius impedit eum
+                    voluptate velit magnam vitae natus, nesciunt et assumenda!
+                    Earum est sequi cupiditate eum accusantium deserunt quasi
+                    officiis nam, voluptates labore quia nihil possimus adipisci
+                    nulla dolorem quo exercitationem, et ratione quod optio
+                    recusandae deleniti eius? Impedit eos error voluptate
+                    aliquam porro vel, cupiditate commodi sequi nisi, fugit
+                    delectus quo culpa asperiores nulla quae. Ipsum, quia! Iure
+                    aspernatur porro sit adipisci velit id cumque provident
+                    harum exercitationem, iste culpa distinctio necessitatibus
+                    eum alias officiis quia fugiat! Ea consequuntur iste nihil
+                    accusamus nobis officia rem quibusdam corrupti, sapiente sed
+                    odio, pariatur facilis error dolore aliquid illo quae
+                    deleniti cumque nam sequi explicabo architecto doloremque?
+                    Eum incidunt unde laudantium dicta cum in, expedita culpa
+                    eaque fuga neque possimus voluptate laboriosam tempora
+                    placeat ipsum velit nam explicabo numquam adipisci quaerat
+                    aperiam rerum itaque ab? Expedita nobis id, doloremque totam
+                    corporis nulla, odio reiciendis tenetur nemo, officiis quas
+                    beatae nisi modi! Sunt, rerum temporibus?
+                  </p>
+                </div>
+                <!-- END MODAL-BODY  -->
+                <div class="modal-footer">
+                  <button class="btn btn-secondary" data-dismiss="modal">
+                    Đóng
+                  </button>
+                  <button class="btn btn-primary">Lưu</button>
+                </div>
+                <!-- END MODAL-FOOTER  -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/popper.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <title>Xây dựng nội dung hiển thị kiểu Poup Modal</title>
+  </head>
+  <body>
+    <style>
+      .modal {
+        background: gray;
+        opacity: 0.8;
+      }
+    </style>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Modal Bootstrap</h1>
+          <a href="">Kích hoạt</a>
+          <!-- Cấu trúc Modal  -->
+          <div class="modal" id="demo-modal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Demo Modal Unitop</h5>
+                  <button class="close" data-dismiss="modal">
+                    <span>&times;</span>
+                  </button>
+                </div>
+                <!-- END MODAL-HEADER -->
+                <div class="modal-body">
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Nisi neque expedita numquam vitae, nihil minus rem dolores
+                    ex provident dignissimos.
+                  </p>
+                </div>
+                <!-- END MODAL-BODY  -->
+                <div class="modal-footer">
+                  <button class="btn btn-secondary" data-dismiss="modal">
+                    Đóng
+                  </button>
+                  <button class="btn btn-primary">Lưu</button>
+                </div>
+                <!-- END MODAL-FOOTER  -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      $(document).ready(function () {
+        $("a").click(function () {
+          $(".modal").slideToggle(400);
+          return false;
+        });
+      });
+    </script>
+    <script src="js/popper.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

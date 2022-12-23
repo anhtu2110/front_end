@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+    <title>Bo tròn góc khối trong bootstrap</title>
+  </head>
+  <body>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        float: left;
+        margin-left: 20px;
+      }
+    </style>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="text-center">Border trong bootstrap</h1>
+          <h3>Thiết lập border</h3>
+          <div class="box bg-light border-warning border-top"></div>
+          <div class="box bg-light border-warning border-right"></div>
+          <div class="box bg-light border-warning border-bottom"></div>
+          <div class="box bg-light border-warning border-left"></div>
+          <div class="box bg-light border-warning border"></div>
+
+          <h3>Hủy bỏ border</h3>
+          <div class="box bg-light border border-danger border-top-0"></div>
+          <div class="box bg-light border border-danger border-right-0"></div>
+          <div class="box bg-light border border-danger border-bottom-0"></div>
+          <div class="box bg-light border border-danger border-left"></div>
+          <div class="box bg-light border border-danger"></div>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

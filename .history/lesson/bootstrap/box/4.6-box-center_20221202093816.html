@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+    <title>Căng giữa khối trong bootstrap</title>
+  </head>
+  <body>
+    <style>
+      .box-child {
+        width: 100px;
+      }
+    </style>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Căn giữa khối trong bootstrap</h1>
+          <h2>Cách 1</h2>
+          <div class="box-parent bg-secondary type-1">
+            <div class="box-child bg-success mx-auto text-center">
+              Box Child
+            </div>
+          </div>
+          <h2>Cách 2</h2>
+          <div class="box-parent bg-secondary type-2 text-center">
+            <div class="box-child bg-success d-inline-block">
+              Box Child Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Quasi, illo?
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

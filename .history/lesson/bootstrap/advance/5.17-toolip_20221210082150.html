@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+    <title>Sử dụng chú thích nâng cao với Toolip</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Toolip trong bootstrap</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque laborum optio aperiam temporibus
+                    suscipit adipisci beatae nam sunt? Delectus saepe earum similique unde sint vero, placeat velit
+                    deserunt accusantium aspernatur voluptatem porro alias ea dolorem, eius sit impedit ipsam? Commodi!
+                </p>
+                <!-- 3.Điều khiển vị trí hiển thị tooltip
+                Thêm thuộc tính data-placement=''
+                -->
+                <p>Lorem, ipsum dolor <a href="" data-toggle="Tooltip"
+                        title="Tooltip for a Doloremque laborum optio aperiam temporibus" data-placement="left">sit
+                        amet</a>, sit amet
+                    consectetur
+                    adipisicing elit. Iusto, et.</p>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            //Kích hoạt tooltip
+            $('[data-toggle="Tooltip"]').tooltip({});
+        });
+    </script>
+    <script src="js/popper.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

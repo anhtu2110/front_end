@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+    <title>Form layout</title>
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 bg-secondary text-light">Sidebar Left</div>
+            <div class="col-md-8">
+                <h1 class="text-center">Form layout Bootstrap</h1>
+                <h3>Form Group</h3>
+                <div action="">
+                        <label for="username">Username</label>
+                        <input type="text" class="form-control" name="username" id="username" />
+                      <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" name="password" id="password" />
+                      </div>
+                      <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" name="email" id="email" />
+                      </div>
+                      <div class="form-group">
+                        <label for="course">Text</label>
+                        <select id="course" class="form-control" name="">
+                            <option>Php Master</option>
+                            <option>Bootstrap</option>
+                            <option>Responsive</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="content">Content</label>
+                        <textarea id="content" class="form-control" name="" rows="3"></textarea>
+                      </div>
+                      <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" name="remember_me" id="remember_me" />
+                        <!-- .form-check-input thêm vào với trường hợp loại chechbox  -->
+                        <label for="remember_me" class="form-check-label">Remember_me</label>
+                      </div>
+                      <div class="form-group">
+                        <input type="radio" name="gender" id="male" value="male">
+                        <label for="male">Nam</label>
+                        <input type="radio" name="gender" id="female" value="female">
+                        <label for="female">Nữ</label>
+                      </div>
+                      <div class="form-group">
+                        <label for="filter_product">Lọc sản phẩm</label>
+                        <input id="filter_product" class="form-control-range" type="range" name="filter" min="0" max="100">
+                      </div>
+                      <div class="form-group">
+                        <label for="choose_file">Chọn file</label>
+                        <input id="choose_file" class="form-control-file" type="file" name="">
+                      </div>
+                      <button type="submit" class="btn btn-primary btn-block" name="">Login</button>
+                </form>
+                <h3>Form Grid</h3>
+                <form action="">
+                  <div class="row">
+                      <div class="col-md-6">
+                          <div class="form-group">
+                              <input id="username" class="form-control" type="text" name="username" placeholder="Username">
+                          </div>                         
+                      </div>
+                      <div class="col-md-6">
+                          <div class="form-group">
+                              <input id="password" class="form-control" type="text" name="password" placeholder="password">
+                          </div>             
+                      </div>
+                  </div>
+                </form>
+                <h3>Form Row</h3>
+                <form action="">
+                  <div class="form-row">
+                      <!-- Khi sử dụng .form-row thì margin chỉ là 5px còn row margin 15px -->
+                      <div class="col-md-6">
+                          <div class="form-group">
+                              <input id="username" class="form-control" type="text" name="username" placeholder="Username">
+                          </div>                            
+                      </div>
+                      <div class="col-md-6">
+                          <div class="form-group">
+                              <input id="password" class="form-control" type="text" name="password" placeholder="password">
+                          </div>                             
+                      </div>
+                  </div>
+                </form>
+                <h3>Form grid + form-group</h3>
+                <form action="">
+                  <div class="row">
+                      <div class="col-md-6">
+                          <div class="form-group">
+                              <label for="username_2">Username</label>
+                              <input id="username_2" class="form-control" type="text" name="username" placeholder="Username">
+                          </div>                            
+                      </div>
+                      <div class="col-md-6">
+                          <div class="form-group">
+                              <label for="password_2">Password</label>
+                              <input id="password_2" class="form-control" type="text" name="password" placeholder="password">
+                          </div>                             
+                      </div>
+                  </div>
+                </form>
+                <h3>Form 2 column</h3>
+                <form action="">
+                  <div class="row align-items-center">
+                          <label for="username_3" class="col-md-2">Username</label>
+                          <input type="text" name="username_3" id="username_3" class="form-control col-md-10">
+                      <!-- </div>                  -->
+                  </div>
+                  <div class="row align-items-center">
+                          <label for="password_3" class="col-md-2">Password</label>
+                          <input type="password" name="password_3" id="password_3" class="col-md-10 form-control">
+                  </div>
+                </form>
+            </div>
+            </div>
+            <div class="col-md-2 bg-secondary text-light">Sidebar Rigth</div>
+        </div>
+    </div>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

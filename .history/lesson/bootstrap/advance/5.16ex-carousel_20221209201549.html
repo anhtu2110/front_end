@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+    <title>Hiển thị carousel vối bootstrap</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h1 class="text-center">Carousle Slideshow Bootstrap</h1>
+                <!-- #1.Cấu trúc xây dựng Carousle Slidshow đơn giản 
+                    #2.Thêm nút Control Prev - Next
+                    #3.Thêm thanh indicators- Chỉ số slide
+                    #4. Thêm caption
+                    #5.Điều chỉnh hiệu ứng chuyển slide - fade
+                    #6.Điểu khiển thời gian chuyển slide qua thuộc tính
+                    #7. Điều khiển carousel slide với Jquery  -->
+                <div id="home-slide" class="carousel slide" data-ride="carousel">
+                    <!-- Thêm thuộc tính data-ride="carousel" để kích hoạt carousel  -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#home-slide" class="active" data-slide-to="0"></li>
+                        <li data-target="#home-slide" data-slide-to="1"></li>
+                        <li data-target="#home-slide" data-slide-to="2"></li>
+                        <li data-target="#home-slide" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./images/slide-1.png" alt="" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/slide-2.png" alt="" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/slide-3.png" alt="" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/slide-4.png" alt="" class="d-block w-100">
+                        </div>
+                    </div>
+                    <!-- end carousel-inner  -->
+                    <!-- Thêm nút control Prev-Next  -->
+                    <a href="#home-slide" class="carousel-control-prev" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a href="#home-slide" class="carousel-control-next" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+    <title>Hiển thị danh sách bài viết dạng lưới</title>
+  </head>
+  <body>
+    <style>
+      span.old_price {
+        text-decoration: line-through;
+      }
+      button.ordered:hover {
+        background: #dc3545;
+        color: white;
+      }
+    </style>
+    <div id="wrapper">
+      <div id="header" class="bg-dark">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 py-2 text-white text-center">
+              UNITOP ACADEMY
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END HEADER  -->
+      <div id="content">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h1>Shop</h1>
+              <ul class="list_product list-unstyled">
+                <div class="row">
+                  <div class="col-md-3">
+                    <li class="product_item text-center border">
+                      <a href="">
+                        <img
+                          class="img-fluid"
+                          src="./images/product-1.jpg"
+                          alt=""
+                        />
+                      </a>
+                      <a href="">Lorem ipsum dolor sit amet.</a>
+                      <p class="price text-danger">
+                        500.000đ
+                        <span class="old_price text-secondary text-decoratin"
+                          >800.000đ</span
+                        >
+                      </p>
+                      <button
+                        class="ordered bg-white border-danger border rounded mb-3"
+                      >
+                        <a
+                          href=""
+                          class="px-1 py-2 text-decoration-none text-danger"
+                          >Đặt mua</a
+                        >
+                      </button>
+                    </li>
+                  </div>
+                  <div class="col-md-3">
+                    <li class="product_item text-center border">
+                      <a href="">
+                        <img
+                          class="img-fluid"
+                          src="./images/product-1.jpg"
+                          alt=""
+                        />
+                      </a>
+                      <a href="">Lorem ipsum dolor sit amet.</a>
+                      <p class="price text-danger">
+                        500.000đ
+                        <span class="old_price text-secondary text-decoratin"
+                          >800.000đ</span
+                        >
+                      </p>
+                    </li>
+                  </div>
+                  <div class="col-md-3">
+                    <li class="product_item text-center border">
+                      <a href="">
+                        <img
+                          class="img-fluid"
+                          src="./images/product-1.jpg"
+                          alt=""
+                        />
+                      </a>
+                      <a href="">Lorem ipsum dolor sit amet.</a>
+                      <p class="price text-danger">
+                        500.000đ
+                        <span class="old_price text-secondary text-decoratin"
+                          >800.000đ</span
+                        >
+                      </p>
+                    </li>
+                  </div>
+                  <div class="col-md-3">
+                    <li class="product_item text-center border">
+                      <a href="">
+                        <img
+                          class="img-fluid"
+                          src="./images/product-1.jpg"
+                          alt=""
+                        />
+                      </a>
+                      <a href="">Lorem ipsum dolor sit amet.</a>
+                      <p class="price text-danger">
+                        500.000đ
+                        <span class="old_price text-secondary text-decoratin"
+                          >800.000đ</span
+                        >
+                      </p>
+                    </li>
+                  </div>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END CONTENT  -->
+    </div>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
